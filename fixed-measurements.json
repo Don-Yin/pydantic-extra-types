@@ -1,0 +1,104 @@
+{
+  "phase": "fixed",
+  "python": "3.11.15",
+  "pydantic": "2.14.1",
+  "pendulum": "3.2.0",
+  "cases": [
+    {
+      "timezone": "Naive",
+      "microsecond": 0,
+      "serialized": "\"2024-01-01T12:30:00/2024-01-02T12:30:00\"",
+      "start_before": "2024-01-01T12:30:00",
+      "end_before": "2024-01-02T12:30:00",
+      "start_after": "2024-01-01T12:30:00",
+      "end_after": "2024-01-02T12:30:00",
+      "naive_before": true,
+      "naive_after": true,
+      "endpoints_preserved": true
+    },
+    {
+      "timezone": "Naive",
+      "microsecond": 123456,
+      "serialized": "\"2024-01-01T12:30:00.123456/2024-01-02T12:30:00.123456\"",
+      "start_before": "2024-01-01T12:30:00.123456",
+      "end_before": "2024-01-02T12:30:00.123456",
+      "start_after": "2024-01-01T12:30:00.123456",
+      "end_after": "2024-01-02T12:30:00.123456",
+      "naive_before": true,
+      "naive_after": true,
+      "endpoints_preserved": true
+    },
+    {
+      "timezone": "UTC",
+      "microsecond": 0,
+      "serialized": "\"2024-01-01T12:30:00+00:00/2024-01-02T12:30:00+00:00\"",
+      "start_before": "2024-01-01T12:30:00+00:00",
+      "end_before": "2024-01-02T12:30:00+00:00",
+      "start_after": "2024-01-01T12:30:00+00:00",
+      "end_after": "2024-01-02T12:30:00+00:00",
+      "naive_before": false,
+      "naive_after": false,
+      "endpoints_preserved": true
+    },
+    {
+      "timezone": "UTC",
+      "microsecond": 123456,
+      "serialized": "\"2024-01-01T12:30:00.123456+00:00/2024-01-02T12:30:00.123456+00:00\"",
+      "start_before": "2024-01-01T12:30:00.123456+00:00",
+      "end_before": "2024-01-02T12:30:00.123456+00:00",
+      "start_after": "2024-01-01T12:30:00.123456+00:00",
+      "end_after": "2024-01-02T12:30:00.123456+00:00",
+      "naive_before": false,
+      "naive_after": false,
+      "endpoints_preserved": true
+    },
+    {
+      "timezone": "+05:30",
+      "microsecond": 0,
+      "serialized": "\"2024-01-01T12:30:00+05:30/2024-01-02T12:30:00+05:30\"",
+      "start_before": "2024-01-01T12:30:00+05:30",
+      "end_before": "2024-01-02T12:30:00+05:30",
+      "start_after": "2024-01-01T12:30:00+05:30",
+      "end_after": "2024-01-02T12:30:00+05:30",
+      "naive_before": false,
+      "naive_after": false,
+      "endpoints_preserved": true
+    },
+    {
+      "timezone": "+05:30",
+      "microsecond": 123456,
+      "serialized": "\"2024-01-01T12:30:00.123456+05:30/2024-01-02T12:30:00.123456+05:30\"",
+      "start_before": "2024-01-01T12:30:00.123456+05:30",
+      "end_before": "2024-01-02T12:30:00.123456+05:30",
+      "start_after": "2024-01-01T12:30:00.123456+05:30",
+      "end_after": "2024-01-02T12:30:00.123456+05:30",
+      "naive_before": false,
+      "naive_after": false,
+      "endpoints_preserved": true
+    },
+    {
+      "timezone": "-03:30",
+      "microsecond": 0,
+      "serialized": "\"2024-01-01T12:30:00-03:30/2024-01-02T12:30:00-03:30\"",
+      "start_before": "2024-01-01T12:30:00-03:30",
+      "end_before": "2024-01-02T12:30:00-03:30",
+      "start_after": "2024-01-01T12:30:00-03:30",
+      "end_after": "2024-01-02T12:30:00-03:30",
+      "naive_before": false,
+      "naive_after": false,
+      "endpoints_preserved": true
+    },
+    {
+      "timezone": "-03:30",
+      "microsecond": 123456,
+      "serialized": "\"2024-01-01T12:30:00.123456-03:30/2024-01-02T12:30:00.123456-03:30\"",
+      "start_before": "2024-01-01T12:30:00.123456-03:30",
+      "end_before": "2024-01-02T12:30:00.123456-03:30",
+      "start_after": "2024-01-01T12:30:00.123456-03:30",
+      "end_after": "2024-01-02T12:30:00.123456-03:30",
+      "naive_before": false,
+      "naive_after": false,
+      "endpoints_preserved": true
+    }
+  ]
+}
